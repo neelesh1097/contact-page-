@@ -1,0 +1,149 @@
+/* CSS custom properties from style guide */
+:root {
+  /* Primary */
+  --green-200: hsl(148, 38%, 91%);
+  --green-600: hsl(169, 82%, 27%);
+  --red: hsl(0, 66%, 54%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --grey-500: hsl(186, 15%, 59%);
+  --grey-900: hsl(187, 24%, 22%);
+
+  /* Typography */
+  --font-family-base: "Karla", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-size-base: 16px; /* labels */
+  --text-color: var(--grey-900);
+}
+
+/* Base resets and typography */
+html { font-size: 100%; }
+body {
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--green-200);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+
+/* Utility classes */
+.text-muted { color: var(--grey-500); }
+.text-danger { color: var(--red); }
+.bg-white { background-color: var(--white); }
+.bg-primary { background-color: var(--green-600); }
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: hsl(148, 38%, 91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.contact-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+
+.radio-group label{
+  border: 2px solid rgb(151, 148, 148);
+   border-radius: 8px;
+    gap: 5px;
+   padding: 10px 10px;
+ }
+ 
+  label input{
+   border: 2px solid black;
+ }
+
+ .radio-group{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.submit-btn {
+  width: 100%;
+  background: hsl(169, 82%, 27%);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
